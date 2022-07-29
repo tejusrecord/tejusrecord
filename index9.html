@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teju's RecordPlayer</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style9.css" />
+    <style type="text/css">
+    	a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+    </style>
+  </head>
+  <body>
+    <div class="player">
+      <div class="record">
+        <div class="label"></div>
+      </div>
+      <div class="tone-arm">
+        <div class="control"></div>
+      </div>
+      <button class="btn"></button>
+      <div class="slider-container">
+        <input
+          type="range"
+          class="slider"
+          min="0"
+          max="1"
+          step="0.1"
+          value="0.7"
+        />
+      </div>
+    </div>
+    <audio loop class="my-song" src="Home9.mp3" preload="auto"></audio>
+    <!-- Script -->
+    <br>
+    <br>
+  <p align="center"><a href="index8.html" class="previous round">&#8249;</a>
+<a href="index10.html" class="next round">&#8250;</a></p>
+   
+    <script src="script.js"></script>
+  </body>
+</html>
